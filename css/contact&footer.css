@@ -1,0 +1,43 @@
+#contact_info{
+    padding: 2rem 0;
+    max-width: 90%;
+    border-top: 5px solid var(--gold);
+}
+
+#contact_info ul{
+    list-style: none;
+    line-height: 2;
+}
+
+#contact_info i{
+    margin-right: 0.5rem;
+}
+
+.contact_img{
+    border: 5px solid var(--gold);
+    border-radius: 0.3rem;
+}
+
+.li_label{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.contact_link{
+    color: var(--gold);
+    transition: 0.2s 0.1s;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.contact_link:hover{
+    color: var(--white);
+}
+
+footer{
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 1rem 0;
+}

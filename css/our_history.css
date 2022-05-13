@@ -1,0 +1,199 @@
+#home{
+    min-height: 95vh;
+    display: flex;
+    align-items: flex-end;
+    margin: 2rem auto;
+    max-width: 90%;
+    align-items: center;
+
+}
+
+.img_home{
+    max-width: 60%;
+    margin: 0 auto;
+    border: 5px solid var(--gold);
+    border-radius: 0.4rem;
+}
+
+.home_text_left{
+    max-width: 50%;
+}
+
+.overtitle{
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.title{
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    color: var(--gold);
+}
+
+.text_home{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
+
+#welcome_club{
+    min-height: 100vh;
+}
+
+.welcome_header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title_section{
+    color: var(--gold);
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+.background_earn{
+    background-color: var(--dark-light);
+    display: flex;
+    gap: 0 2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+}
+
+.welcome_header{
+    margin-bottom: 6rem;
+}
+
+.img_earn{
+    position: relative;
+    bottom: 3rem;
+    max-width: 20%;
+    border: 5px solid var(--gold);
+    border-radius: 0.5rem;
+}
+
+.benefits{
+    display: grid;
+    grid-auto-flow: column dense;
+    margin-top: 3rem;
+}
+
+.benefits i{
+    font-size: 3rem;
+    color: var(--gold)
+}
+
+
+.div_title{
+    height: 4.2rem;
+    margin: 1rem 0;
+}
+
+.benefit_text{
+    line-height: 1.5;
+}
+
+#sponsors{
+    min-height: 90vh;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.header_center{
+    text-align: center;
+}
+
+
+.sponsors_brands{
+    border: 5px solid var(--gold);
+    border-radius: 0.3rem;
+    margin: 4rem auto 0 auto;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0 5rem;
+}
+
+
+.sponsor_content{
+    text-align: center;
+    line-height: 5;
+    color: var(--gold);
+}
+.sponsor_content i{
+    font-size: 6rem;
+}
+
+#sign_in_club{
+    text-align: center;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.subtitle_sign_in{
+    font-weight: 300;
+    line-height: 2;
+}
+
+.adults_only{
+    color: var(--gold);
+    margin-bottom: 2rem;
+}
+
+.sign_in_button{
+    color: var(--white);
+    padding: 1rem 3rem;
+    background-color: var(--gold-brown);
+    border: 2px solid var(--gold);
+    border-radius: 0.5rem;
+    font-size: 1.4rem;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+.sign_in_button:hover{
+    color: var(--gold);
+    background-color: var(--dark-light);
+    transition: 0.2s 0.1s;
+}
+
+@media only screen and (max-width: 1400px){
+    .div_img_right{
+        display: none;
+    }
+
+    .home_text_left{
+        max-width: 100%;
+    }
+
+    .img_earn{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    html{
+        font-size: 0.8rem;
+    }
+
+    .benefits{
+        grid-auto-flow: row dense;
+        gap: 1rem;
+    }
+
+    .background_earn{
+        margin: 2rem auto;
+    }
+
+    .div_title{
+        height: 3rem;
+    }
+}

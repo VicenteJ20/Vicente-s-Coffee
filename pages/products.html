@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/products.css">
+    <link rel="stylesheet" href="/css/contact&footer.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/resources/brand.png" type="image/png">
+    <title>Productos - Vicente's Coffee</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid container_fluid">
+        <a class="navbar-brand" href="/index.html#home" style="color: var(--white);">Vicente's Coffee</a>
+        <button class="navbar-toggler border_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="menu_icon fa-solid fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/pages/our_story.html">Nuestra Historia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html#contact_info">Contacto</a>
+            </li>
+            <li class="nav-item">
+                <a href="/pages/products.html" class="nav-link">Compras</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="search_input form-control me-2" type="search" placeholder="Escriba para buscar..." aria-label="Search">
+            <button class="search_btn btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <div class="user_div">
+              <a href="/pages/login.html" class="user_account">
+                  <i class="fa-solid fa-user"></i>
+                  <span class="text_user">Mi <br> cuenta</span>
+              </a>
+          </div>
+          <div class="user-div">
+              <a href="/pages/our_story.html" class="shooping_link">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span class="text_cart"> Carrito (0)</span>
+              </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <main id="main" class="container-fluid">
+        <section id="product_content">
+            <h1 class="title_product">Encuentra el mejor producto para ti</h1>
+            <section id="grid_product_section" class="row row-cols-2 container-fluid">  
+                <aside class="col aside_section">
+                    <form action="#" id="form_selection">
+                        <div class="form_content">
+                            <h3 class="title_form">Ofertas Primero</h3>
+                            <div class="form_selection_content form-check form-check-inline">
+                                <input type="radio" name="yesorno" class="form-check-input" id="yes_inline_radio" value="Yes">
+                                <label for="yes_inline_radio" class="form-check-label">Sí</label>
+                            </div>
+                            <div class="form_selection_content form-check form-check-inline" style="margin-left: 1rem;">
+                                <input type="radio" name="yesorno" class="form-check-input" id="no_inline_radio" value="No">
+                                <label for="no_inline_radio" class="form-check-label">No</label>
+                            </div>
+                        </div>
+                        <div class="form_content">
+                            <h3 class="title_form">Por categoría</h3>
+                            <div class="form_selection_content form-check">
+                                <input type="checkbox" value="Expreso" class="form-check-input" id="flex_check_1">
+                                <label for="flex_check_1" class="form-check-label">Expreso</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                                <input type="checkbox" value="tradition" class="form-check-input" id="form_check_1"></input>
+                                <label for="form_check_2" class="form-check-label">Tradición</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                                <input type="checkbox" value="arabic" class="form-check-input" id="form_check_2"></input>
+                                <label for="form_check_3" class="form-check-label">Grano arábico</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                                <input type="checkbox" value="robust" class="form-check-input" id="form_check_3"></input>
+                                <label for="form_check_3" class="form-check-label">Grano robusto</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                                <input type="checkbox" value="Couples" class="form-check-input" id="form_check_4"></input>
+                                <label for="form_check_4" class="form-check-label">Para parejas</label>
+                            </div>
+                        </div>
+                        <div class="form_content">
+                            <h3 class="title_form">Por precio</h3>
+                            <div class="form_selection_content form-check">
+                              <input type="checkbox" value="-2500" class="form-check-input" id="form_check_price">
+                              <label for="form_check_price" class="form-check-label">Hasta a $2500 CLP</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                              <input type="checkbox" value="+2500" id="form_check_price1" class="form-check-input">
+                              <label for="form_check_price1" class="form-check-label">Más de $2500 CLP</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                              <input type="checkbox" value="more_expensive" id="form_check_price2" class="form-check-input">
+                              <label for="form_check_price2" class="form-check-label">Más caro</label>
+                            </div>
+                            <div class="form_selection_content form-check">
+                              <input type="checkbox" value="cheapest" id="form_check_price3" class="form-check-input">
+                              <label for="form_check_price3" class="form-check-label">Más barato</label>
+                            </div>
+                        </div>
+                        <div class="form_content">
+                          <input type="submit" value="Buscar" class="btn submit_btn">
+                        </div>
+                    </form>
+                </aside>
+                <div class="col product_div_imgs">
+                  <div id="grid_content" class="justify-content-center row gap-2 row-cols-2 container-fluid">
+                    <div class="col img1 img">
+                        <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Expreso Vainilla con diseño (250ml)</a></div>
+                    </div>
+                    <div class="col img2 img">
+                        <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Mug de café robusto (350ml)</a></div>
+                    </div>
+                    <div class="col img3 img">
+                        <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Mug arábico tradición (350ml)</a></div>
+                    </div>
+                    <div class="col img4 img">
+                        <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Expreso clásico (450ml)</a></div>
+                    </div>
+                    <div class="col img5 img">
+                        <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Expreso arábico doble (350ml)</a></div>
+                    </div>
+                    <div class="col img6 img">
+                        <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Mug tradición (350ml)</a></div>
+                    </div>
+                    <div class="col img7 img">
+                      <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Café natural</a></div>
+                    </div>
+                    <div class="col img8 img">
+                      <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Café informático</a></div>
+                    </div>
+                    <div class="col img9 img">
+                      <div class="text_img"><a href="/pages/product.html" target="_blank" class="link_img">Café con agregado</a></div>
+                    </div>
+                  </div>
+                  <div class="form_content">
+                    <nav aria-label="...">
+                      <ul class="pagination pagination-lg justify-content-center">
+                        <li class="page-item active_page" aria-current="page">
+                          <a href="/pages/products.html" class="page-link">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="/pages/products.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="/pages/products.html">3</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+                
+            </section>
+        </section>
+        <section id="contact_info" class="container-fluid">
+          <div class="row row-cols-2 text_content">
+            <div class="col-md-8">
+              <h2 class="section_title">Vicente's Coffee</h2>
+              <div class="row row-cols-2 mt-5 cols_info">
+                <div class="col">
+                  <ul>
+                    <li class="list-item li_label">Trabaja con nosotros, envíanos tu CV</li>
+                    <li class="list-item"><i class="fa-solid fa-message"></i> <a href="/pages/our_story.html" class="contact_link">correo@vicentecoffee.com</a></li>
+                    <li class="list-item li_label">Dirección</li>
+                    <li class="list-item"><i class="fa-solid fa-location-arrow"></i> <a href="/pages/our_story.html" class="contact_link">Ratoath Rd, Cabra West, Dublin 7, Irlanda.</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="list-item li_label">Nuestra tienda</li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Preguntas frecuentes</a></li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Reclamos</a></li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Solicitud de reembolso</a></li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Información legal</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 div_img_contact">
+                <img src="/resources/coffee_bowl_footer.jpg" alt="" class="img-fluid contact_img">
+            </div>
+          </div>
+        </section>
+      </main>
+      <section id="footer_section">
+        <footer>Sitio web creado por <a href="/index.html" class="contact_link">Vicente Jorquera</a> Mayo, 2022</footer>
+      </section>
+
+      <!-- SCRIPTS -->
+      <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

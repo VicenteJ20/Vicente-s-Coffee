@@ -1,0 +1,112 @@
+#shooping_cart{
+    min-height: 90vh;
+    max-width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table{
+    color: var(--white);
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.img_div_item{
+    max-width: 20rem;
+    border: 5px solid var(--gold-brown);
+    border-radius: 0.4rem;
+}
+
+.td_content{
+    display: flex;
+    justify-content: center;
+
+    gap: 0 1rem;
+}
+
+.title_product{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.td_content,
+.products_th{
+    margin: 0;
+}
+
+th{
+    min-width: 10rem;
+}
+
+.contenido_td{
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    height: 10rem;
+}
+
+.delete_item_link{
+    color: var(--gold);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.delete_item_link:hover{
+    color: var(--gold-brown);
+    transition: 0.2s 0.1s;
+}
+
+.total_td{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.value_product{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.value_td{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.go_payment{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color: var(--gold-brown);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    border: 3px solid var(--gold)
+}
+
+.go_payment:hover{
+    color: var(--gold);
+    background-color: var(--dark-light);
+    transition: 0.2s 0.1s;
+}
+
+@media only screen and (max-width: 1500px){
+    html{
+        font-size: 0.8rem;
+    }
+
+    .table{
+        max-width: 97%;
+    }
+}
+
+@media only screen and (max-width: 816px){
+    .td_content{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .go_payment{
+        display: block;
+    }
+}

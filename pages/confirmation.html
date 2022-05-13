@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/contact&footer.css">
+    <link rel="stylesheet" href="/css/confirmation.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/resources/brand.png" type="image/png">
+    <title>Confirmación de pago - Vicente's Coffee</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a href="/index.html" class="navbar-brand" id="nav_brand">Vicente's Coffee</a>
+    </nav>
+    <main id="main">
+        <section id="confirmation_home">
+            <form action="/pages/succesfull_payment.html" id="form">
+                <div class="container-fluid">
+                    <div class="row gap-2 row_cols">
+                        <div class="col background_div">
+                            <h2 class="title_col">Datos de envío</h2>
+                            <div class="form_control mb-3">
+                                <label for="address" class="form-label">Dirección</label>
+                                <input type="text" class="form-control" id="address" aria-describedby="address" placeholder="Ingrese su dirección con precausión">
+                            </div>
+                            <div class="form_control mb-3">
+                                <label for="aparment_house" class="form-label">Departamento / Casa</label>
+                                <input type="number" id="aparment_house" class="form-control" min="1" aria-describedby="aparment_house" placeholder="Ejemplo: 22">
+                            </div>
+                            <div class="form_control mb-3">
+                                <label for="phone_number" class="form-label">Número de teléfono</label>
+                                <input type="number" class="form-control" id="phone_number" aria-describedby="phone_number" placeholder="9-12345678">
+                            </div>
+                            <div class="form_control mb-3">
+                                <label for="receptor_id" class="form-label">RUT del receptor</label>
+                                <input type="text" class="form-control" id="receptor_id" aria-describedby="receptor_id" placeholder="123124132-3">
+                            </div>
+                        </div>
+                        <div class="col background_div">
+                            <h2 class="title_col">Datos de pago</h2>
+                            <div class="form_control mb-3">
+                                <label for="card_name" class="form-label">Nombre que aparece en la tarjeta</label>
+                                <input type="text" class="form-control" id="card_name" aria-describedby="card_name" placeholder="Ejemplo: Harvey Reginald Specter">
+                            </div>
+                            <div class="form_control mb-3">
+                                <label for="card_number" class="form-label">Número de tarjeta</label>
+                                <input type="number" class="form-control" id="card_number" aria-describedby="card_number" placeholder="2222 3333 4444 555">
+                            </div>
+                            <div class="form_control mb-3 row row-cols-2">
+                                <div class="col form_control mb-3">
+                                    <label for="expiration_date" class="form-label">Fecha de caducidad</label>
+                                    <input type="month" class="form-control" name="date" id="expiration_date" placeholder="/" style="text-align: center;">
+                                </div>
+                                <div class="col form_control mb-3">
+                                    <label for="cvc_code" class="form-label">CVC</label>
+                                    <input type="number" class="form-control" placeholder="3 dígitos detrás de su tarjeta" minlength="3" maxlength="3">
+                                </div>
+                            </div>
+                            <div class="form_control mb-3">
+                                <label for="shares_number" class="form-label">Número de coutas</label>
+                                <input type="number" class="form-control" min="1" placeholder="1" id="shares_number">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit_div">
+                    <a href="/pages/successfull_confirmation.html" class="submit_div_element">Confirmar pedido</a>
+                </div>
+            </form>
+        </section>
+        <section id="contact_info" class="container-fluid">
+            <div class="row row-cols-2 text_content">
+              <div class="col-md-8">
+                <h2 class="section_title">Vicente's Coffee</h2>
+                <div class="row row-cols-2 mt-5 cols_info">
+                  <div class="col">
+                    <ul>
+                      <li class="list-item li_label">Trabaja con nosotros, envíanos tu CV</li>
+                      <li class="list-item"><i class="fa-solid fa-message"></i> <a href="/pages/our_story.html" class="contact_link">correo@vicentecoffee.com</a></li>
+                      <li class="list-item li_label">Dirección</li>
+                      <li class="list-item"><i class="fa-solid fa-location-arrow"></i> <a href="/pages/our_story.html" class="contact_link">Ratoath Rd, Cabra West, Dublin 7, Irlanda.</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul>
+                      <li class="list-item li_label">Nuestra tienda</li>
+                      <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Preguntas frecuentes</a></li>
+                      <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Reclamos</a></li>
+                      <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Solicitud de reembolso</a></li>
+                      <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Información legal</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 div_img_contact">
+                  <img src="/resources/coffee_bowl_footer.jpg" alt="" class="img-fluid contact_img">
+              </div>
+            </div>
+          </section>
+    </main>
+    <section id="footer_section">
+        <footer>Sitio web creado por <a href="/index.html" class="contact_link">Vicente Jorquera</a> Mayo, 2022</footer>
+    </section>
+    <!--SCRIPTS-->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

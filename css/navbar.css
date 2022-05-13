@@ -1,0 +1,93 @@
+.container_fluid{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--gold);
+}
+
+.container_fluid a{
+    color: var(--gold);
+}
+
+.container_fluid a:hover{
+    color: var(--gold-brown);
+    transition: 0.2s 0.1s;
+}
+
+.navbar{
+    position: fixed;
+    min-width: 100%;
+    background-color: var(--dark-gray);
+    top: 0;
+    z-index: 10;
+}
+
+.navbar-brand{
+    font-family: 'Lobster', cursive;
+    font-size: 1.6rem;
+}
+
+.navbar-nav{
+    margin: 0 auto;
+    gap: 0.5rem 1rem;
+}
+
+.search_input{
+    border-radius: 0.6rem;
+    border: 3px solid var(--gold-brown);
+}
+
+.search_btn{
+    border-radius: 0.3125rem;
+    border: 2px solid var(--gold);
+    color: var(--gold);
+}
+
+.search_btn:hover{
+    background-color: var(--gold-brown);
+    border-color: var(--white);
+    color: var(--white);
+}
+
+.user_div{
+    margin: 0 1rem;
+}
+
+.shooping_link,
+.user_account{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 0 1rem;
+    align-items: center;
+}
+
+.text_user{
+    font-size: 0.8rem;
+}
+
+.text_cart{
+    font-size: 0.9rem;
+}
+
+.menu_icon{
+    font-size: 2rem;
+    color: var(--gold);
+}
+
+.border_button{
+    color: var(--gold);
+}
+
+@media only screen and (max-width: 1500px){
+    .user_div{
+        margin: 1rem 0;
+    }
+
+    .text_user br{
+        display: none;
+    }
+
+    .text_user{
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/contact&footer.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/resources/brand.png" type="image/png">
+    <title>Product - Vicente's Coffee</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid container_fluid">
+      <a class="navbar-brand" href="/index.html#home" style="color: var(--white);">Vicente's Coffee</a>
+      <button class="navbar-toggler border_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="menu_icon fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/pages/our_story.html">Nuestra Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#contact_info">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a href="/pages/products.html" class="nav-link">Compras</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="search_input form-control me-2" type="search" placeholder="Escriba para buscar..." aria-label="Search">
+          <button class="search_btn btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="user_div">
+            <a href="/pages/login.html" class="user_account">
+                <i class="fa-solid fa-user"></i>
+                <span class="text_user">Mi <br> cuenta</span>
+            </a>
+        </div>
+        <div class="user-div">
+            <a href="/pages/shooping_cart.html" class="shooping_link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="text_cart"> Carrito (0)</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+      <main id="main">
+        <section id="home" class="row row-cols-2 justify-content-center container-fluid">
+            <div id="div_left" class="col row row-cols-2">
+                <aside class="div_aside d-flex">
+                    <div class="product_img">
+                        <img src="/resources/vainilla_expresso_design_alternative.jpg" alt="" class="img_product_img img-fluid">
+                    </div>
+                    <div class="product_img">
+                        <img src="/resources/vainilla_expresso_design.jpg" alt="" class="img_product_img img-fluid">
+                    </div>
+                    <div class="product_img">
+                        <img src="/resources/vainilla_expresso_design_alternative.jpg" alt="" class="img_product_img img-fluid">
+                    </div>
+                </aside>
+                <div class="top_img_product">
+                    <img src="/resources/vainilla_expresso_design.jpg" alt="" class="product_top_img img-fluid">
+                </div>
+            </div>
+            <div id="div_right" class="col">
+              <p class="product_code">Código de producto: SK-569819</p>
+              <h2 class="title_product">Expreso de Vainilla con Diseño</h2>
+              <form action="/pages/shooping_cart.html" id="form_selection">
+                <div class="form_control">
+                  <div class="div_text">
+                    <h3 class="title_form_control">Tamaño: </h3>
+                  </div>
+                  <div class="div_content_form">
+                    <input type="radio" class="btn-check" name="size_options" id="size_xl" autocomplete="off">
+                    <label class="btn btn_label selected_option" for="size_xl">XL (590 ml)</label>
+                    <input type="radio" class="btn-check" name="size_options" id="size_l" autocomplete="off">
+                    <label for="size_l" class="btn btn_label">L (450 ml)</label>
+                    <input type="radio" class="btn-check" name="size_options" id="size_m" autocomplete="off">
+                    <label for="size_m" class="btn btn_label">M (350 ml)</label>
+                    <input type="radio" class="btn-check" name="size_options" id="size_s" autocomplete="off">
+                    <label for="size_s" class="btn btn_label">S (210 ml)</label>
+                  </div>
+                </div>
+                <div class="form_control">
+                  <div class="div_text">
+                    <h3 class="title_form_control">Diseño: </h3>
+                  </div>
+                  <div class="div_content_form">
+                    <input type="radio" class="btn-check" name="design_options" id="custom_option" autocomplete="off">
+                    <label for="custom_option" class="btn btn_label">Personalizado</label>
+                    <input type="radio" class="btn-check" name="design_options" id="classic_option" autocomplete="off">
+                    <label for="classic_option" class="btn btn_label selected_option">Clásico</label>
+                    <input type="radio" class="btn-check" name="design_options" id="random_option" autocomplete="off">
+                    <label for="random_option" class="btn btn_label">Aleatorio</label>
+                  </div>
+                </div>
+                <div class="form_control">
+                  <div class="div_text">
+                    <h3 class="title_form_control">Cantidad: </h3>
+                  </div>
+                  <div class="div_content_form">
+                    <input type="number" class="btn_amount btn" min="1" max="5" required>
+                  </div>
+                </div>
+                <div class="form_control">
+                  <div class="div_text">
+                    <h3 class="title_form_control">Dietético: </h3>
+                  </div>
+                  <div class="div_content_form">
+                    <input type="radio" class="btn-check" name="diet_options" id="no_diet" autocomplete="off">
+                    <label for="no_diet" class="btn btn_label selected_option">No</label>
+                    <input type="radio" class="btn-check" name="diet_options" id="ok_diet" autocomplete="off">
+                    <label for="ok_diet" class="btn btn_label">Sí</label>
+                  </div>
+                </div>
+                <div class="form_control">
+                  <input type="submit" class="btn-check" name="submit_cart" id="submit" autocomplete="off">
+                  <label for="submit" class="btn add_button add_label">Enviar</label>
+                  <input type="submit" class="btn-check" name="submit_cart" id="add_cart" autocomplete="off">
+                  <label for="add_cart" class="btn add_button">Agregar al carrito</label>
+                </div>
+              </form>
+              <div class="final_mount">
+                <h2 class="total_title">Total: <span class="span_mount">$4.200</span></h2>
+                <p class="text_alternative">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur molestias soluta incidunt est expedita autem architecto cum tempore quaerat veniam, accusamus porro, deserunt laborum asperiores! Dolore mollitia maxime non ullam eos et sapiente fuga cum tempora magni placeat veniam, esse officia similique nobis, voluptate odio blanditiis? Laudantium corporis dolore beatae, perferendis quisquam molestiae magni non voluptate corrupti necessitatibus, dolorem odio iure facere, temporibus optio animi consectetur ipsam alias. Facilis odit accusamus quasi blanditiis quam molestias error aliquam explicabo aspernatur iste vel pariatur rerum ut mollitia, labore maiores tempore voluptas voluptates excepturi quae ipsam cumque tempora. Quo assumenda mollitia repudiandae. Beatae.</p>
+              </div>
+            </div>
+        </section>
+        <section id="product_features">
+          <h2 class="title_product mb-3 pb-3" style="border-bottom: 3px solid var(--gold);">Características del producto</h2>
+          <p class="text_alternative">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum, facere temporibus quis tempore voluptatibus et exercitationem rem reiciendis voluptate distinctio rerum aliquid vero molestias sunt deserunt error minus atque libero, asperiores consequuntur cupiditate sapiente accusantium consequatur? Quo eaque magnam esse aliquid officiis voluptatum iusto accusantium assumenda, ipsam consequatur? Quod sapiente dolore vitae dolores libero ex provident enim, quam necessitatibus est, ut dignissimos. Quos illo at facere aspernatur, maiores non ex in facilis dolor eos officiis dignissimos dicta doloremque alias fugiat. Consequatur nesciunt quibusdam molestiae? Neque aperiam nisi voluptas error saepe qui, omnis eius minus animi? Repellat non sunt reprehenderit voluptatum perspiciatis, quae aliquid! Voluptate dignissimos accusantium dolores eveniet ad saepe adipisci aspernatur fugit ratione quo soluta nesciunt beatae autem obcaecati vero, ipsa perspiciatis repudiandae numquam dolorum nam omnis porro voluptates error. Voluptate exercitationem blanditiis ut autem dolorem nostrum impedit assumenda corrupti eveniet molestias! Esse est rerum, quasi ipsa hic delectus.</p>
+          <p class="text_alternative">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, tempora repellat. Voluptas quas totam officiis similique aliquid cupiditate, doloribus iure architecto beatae nemo rerum cumque, ab id deserunt ea, nihil eum laborum illum quos expedita quis eius ratione? Hic aliquam vel perferendis dicta error ducimus laudantium. Magnam consequatur aut reiciendis temporibus minima ad, voluptatibus, nesciunt blanditiis dolor, hic et voluptatem?</p>
+          <ul>
+            <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, in?</li>
+            <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, in?</li>
+            <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, in?</li>
+            <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, in?</li>
+            <li class="list-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, in?</li>
+          </ul>
+          <p class="text_alternative">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusamus alias consectetur facilis quaerat? Repudiandae cum exercitationem fuga deleniti atque delectus consequuntur quis laudantium, dolor ipsum eos architecto tempore quos suscipit pariatur excepturi, numquam inventore magni? Quas dolore vero incidunt, ratione ad nemo? Ea consequatur illo perspiciatis nesciunt tempora ullam, error temporibus aliquam assumenda veritatis reiciendis voluptates corporis, quasi ipsam adipisci rem exercitationem debitis eligendi eaque sit corrupti quia blanditiis id voluptate. Totam, alias asperiores facilis dicta culpa quos voluptate magni dolorum, adipisci vel ipsum optio, in impedit. Corrupti tenetur dolorem vel maiores adipisci rerum veniam illum? Provident necessitatibus eos molestias error impedit. Autem voluptatem est veniam assumenda possimus praesentium culpa omnis itaque, excepturi atque, doloribus nemo? Impedit architecto animi ex, enim fugit tempore et cupiditate, illum quibusdam beatae a adipisci repellat odio repudiandae! Quaerat consequatur veritatis accusamus aliquam delectus!</p>
+        </section>
+        <section id="contact_info" class="container-fluid">
+          <div class="row row-cols-2 text_content">
+            <div class="col-md-8">
+              <h2 class="section_title">Vicente's Coffee</h2>
+              <div class="row row-cols-2 mt-5 cols_info">
+                <div class="col">
+                  <ul>
+                    <li class="list-item li_label">Trabaja con nosotros, envíanos tu CV</li>
+                    <li class="list-item"><i class="fa-solid fa-message"></i> <a href="#" class="contact_link">correo@vicentecoffee.com</a></li>
+                    <li class="list-item li_label">Dirección</li>
+                    <li class="list-item"><i class="fa-solid fa-location-arrow"></i> <a href="#" class="contact_link">Ratoath Rd, Cabra West, Dublin 7, Irlanda.</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="list-item li_label">Nuestra tienda</li>
+                    <li class="list-item"><a href="#" class="contact_link">Preguntas frecuentes</a></li>
+                    <li class="list-item"><a href="#" class="contact_link">Reclamos</a></li>
+                    <li class="list-item"><a href="#" class="contact_link">Solicitud de reembolso</a></li>
+                    <li class="list-item"><a href="#" class="contact_link">Información legal</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 div_img_contact">
+                <img src="/resources/coffee_bowl_footer.jpg" alt="" class="img-fluid contact_img">
+            </div>
+          </div>
+        </section>
+      </main>
+      <section id="footer_section">
+        <footer>Sitio web creado por <a href="/index.html" class="contact_link">Vicente Jorquera</a> Mayo, 2022</footer>
+      </section>
+
+      <!-- SCRIPTS -->
+      <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

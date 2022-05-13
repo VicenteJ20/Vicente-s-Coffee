@@ -1,0 +1,198 @@
+#product_content{
+    min-height: 100vh;
+    max-width: 97%;
+    margin: 0 auto;
+}
+.title_product{
+    color: var(--white);
+    font-size: 2.5rem;
+    font-family: 'Lobster', cursive;
+    border-bottom: 3px solid var(--gold);
+    padding: 1rem 0;
+}
+
+.aside_section{
+    border-right: 3px solid var(--gold);
+    max-width: 15%;
+    margin: 1.5rem 0;
+    padding: 1rem 2rem;
+}
+
+.form_content{
+    margin: 1.5rem 0;
+    line-height: 1.5;
+}
+
+.form_selection_content{
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.form_selection_content input{
+    border: 2px solid var(--gold);
+    background-color: var(--dark-light);
+}
+
+.title_form{
+    font-size: 1.5rem;
+}
+
+.submit_btn{
+    color: var(--gold);
+    border-radius: 0.3rem;
+    border: 3px solid var(--gold);
+}
+
+.submit_btn:hover{
+    border: 3px solid var(--gold);
+    background-color: var(--gold-brown);
+    color: var(--white);
+}
+
+/* IMAGES */
+.product_div_imgs{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3rem 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.img{
+    border: 5px solid var(--gold);
+    border-radius: 0.3rem;
+    min-height: 20rem;
+    background-size: cover;
+    padding: 0;
+    display: flex;
+    width: 30%;
+}
+
+.text_img{
+    position: relative;
+    align-self: flex-end;
+    background-color: var(--gold-brown);
+    width: 100%;
+    padding: 0.2rem 0.5rem;
+    align-items: center;
+    text-align: start;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+
+.link_img{
+    color: var(--white);
+    text-decoration: none;
+}
+
+.link_img:hover{
+    transition: 0.2s 0.1s;
+    color: var(--gold);
+}
+
+.img1{
+    background-image: url('/resources/vainilla_express_coffee.jpg');
+}
+
+.img2{
+    background-image: url('/resources/robust_coffee_mug.jpg');
+}
+
+.img3{
+    background-image: url('/resources/arabic_mug_tradition.jpg');
+}
+
+.img4{
+    background-image: url('/resources/classic_express_coffee.jpg');
+}
+
+.img5{
+    background-image: url('/resources/arabic_double_mug.jpg');
+}
+
+.img6{
+    background-image: url('/resources/mug_tradition_coffee.jpg');
+}
+
+.img7{
+    background-image: url('/resources/outdoor_coffee.jpg');
+}
+
+.img8{
+    background-image: url('/resources/Coffee_pc.jpg');
+}
+
+.img9{
+    background-image: url('/resources/coffee_with_bread.jpg');
+}
+
+/*--------------------------*/
+
+.page-link{
+    background-color: var(--dark-light);
+    border: 3px solid var(--gold);
+    color: var(--white);
+}
+
+.page-link:hover{
+    color: var(--white);
+    background-color: var(--gold-brown);
+    border: 3px solid var(--gold);
+}
+
+.active_page > .page-link{
+    background-color: var(--gold-brown);
+}
+
+.active_page >.page-link:hover{
+    background-color: var(--dark-light);
+}
+
+
+@media only screen and (max-width: 1500px){
+    #grid_product_section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .aside_section{
+        min-width: 90vw;
+        border: none;
+        border-bottom: 2px solid var(--gold);
+    }
+
+    #form_selection{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+    
+    .submit_btn{
+        min-width: 30rem;
+    }
+
+    .product_div_imgs{
+        width: 100vw;
+    }
+
+    #grid_content{
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    html{
+        font-size: 0.8rem;
+    }
+
+    #grid_content{
+        flex-direction: column;
+    }
+
+    .img{
+        width: 100%;
+    }
+}

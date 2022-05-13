@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/contact&footer.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="/resources/brand.png" type="image/png">
+    <title>Login - Vicente's Coffee</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid container_fluid">
+      <a class="navbar-brand" href="/index.html#home" style="color: var(--white);">Vicente's Coffee</a>
+      <button class="navbar-toggler border_button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="menu_icon fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/pages/our_story.html">Nuestra Historia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#contact_info">Contacto</a>
+          </li>
+          <li class="nav-item">
+              <a href="/pages/products.html" class="nav-link">Compras</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="search_input form-control me-2" type="search" placeholder="Escriba para buscar..." aria-label="Search">
+          <button class="search_btn btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+        <div class="user_div">
+            <a href="/pages/login.html" class="user_account">
+                <i class="fa-solid fa-user"></i>
+                <span class="text_user">Mi <br> cuenta</span>
+            </a>
+        </div>
+        <div class="user-div">
+            <a href="/pages/shooping_cart.html" class="shooping_link">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="text_cart"> Carrito (0)</span>
+            </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+      <main id="main">
+        <section id="home" class="container-fluid d-flex">
+            <div class="container-fluid row row-cols-2 div_row_content">
+                <div class="col div_img_login">
+                    <img src="/resources/coffee_mug_login.jpg" alt="" class="img-fluid img_login">
+                </div>
+                <div class="col div_right">
+                    <h2 class="title_form">Iniciar sesión</h2>
+                    <form action="/index.html#home" class="d-flex form_div">
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                          <input type="email" class="form-control login_control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese su correo electrónico aquí..." required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                          <input type="password" class="form-control login_control" id="exampleInputPassword1" placeholder="Ingrese su contraseña aquí" required>
+                        </div>
+                        <div class="mb-3 button_div d-flex">
+                            <button type="submit" class="login_button btn btn-primary">Iniciar sesión</button>
+                        </div>
+                      </form>
+                      <div class="message_bottom">
+                        ¿Problemas para iniciar sesión? - <a href="/pages/login.html" class="generic_link">Restablecer contraseña</a>
+                      </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact_info" class="container-fluid">
+          <div class="row row-cols-2 text_content">
+            <div class="col-md-8">
+              <h2 class="section_title">Vicente's Coffee</h2>
+              <div class="row row-cols-2 mt-5 cols_info">
+                <div class="col">
+                  <ul>
+                    <li class="list-item li_label">Trabaja con nosotros, envíanos tu CV</li>
+                    <li class="list-item"><i class="fa-solid fa-message"></i> <a href="/pages/our_story.html" class="contact_link">correo@vicentecoffee.com</a></li>
+                    <li class="list-item li_label">Dirección</li>
+                    <li class="list-item"><i class="fa-solid fa-location-arrow"></i> <a href="/pages/our_story.html" class="contact_link">Ratoath Rd, Cabra West, Dublin 7, Irlanda.</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li class="list-item li_label">Nuestra tienda</li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Preguntas frecuentes</a></li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Reclamos</a></li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Solicitud de reembolso</a></li>
+                    <li class="list-item"><a href="/pages/our_story.html" class="contact_link">Información legal</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 div_img_contact">
+                <img src="/resources/coffee_bowl_footer.jpg" alt="" class="img-fluid contact_img">
+            </div>
+          </div>
+        </section>
+      </main>
+      <section id="footer_section">
+        <footer>Sitio web creado por <a href="/index.html" class="contact_link">Vicente Jorquera</a> Mayo, 2022</footer>
+      </section>
+
+      <!-- SCRIPTS -->
+      <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
